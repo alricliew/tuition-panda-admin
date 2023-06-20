@@ -52,6 +52,7 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 // Admin
 const Request = React.lazy(() => import('./views/request/Request'))
+const RequestAdd = React.lazy(() => import('./views/request/RequestAdd'))
 const Job = React.lazy(() => import('./views/job/Job'))
 const Tutor = React.lazy(() => import('./views/tutor/Tutor'))
 const Client = React.lazy(() => import('./views/client/Client'))
@@ -61,6 +62,7 @@ const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/request', name: 'Request', element: Request },
+  { path: '/request/add-request', name: 'Create New Request', element: RequestAdd },
   { path: '/job', name: 'Job', element: Job },
   { path: '/tutor', name: 'Tutor', element: Tutor },
   { path: '/client', name: 'Client', element: Client },

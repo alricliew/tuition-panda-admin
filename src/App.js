@@ -2,7 +2,8 @@ import React, { Component, Suspense, useState, useEffect } from 'react'
 // import { HashRouter, Route, Routes } from 'react-router-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import './scss/style.scss'
+import './custom-theme.scss'
+// import './scss/style.scss'
 
 // Redux
 import { useSelector, useDispatch } from 'react-redux'

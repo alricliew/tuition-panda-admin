@@ -1,8 +1,10 @@
+// Const V2 for Malaysia
 
 export const USER_BASE_PATH = "user/v1/base"
 export const USER_INFO_PATH = "user/v1/info"
 
 export const REQUEST_ADMIN = "request/v1/admin"
+export const JOB_JOB = "job/v1/job"
 
 export const colourOptions = [
   { value: 'ocean', label: 'Ocean', color: '#00B8D9', isFixed: true },

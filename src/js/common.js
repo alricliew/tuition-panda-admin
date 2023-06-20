@@ -31,6 +31,7 @@ export const AGE_KEY = "age";
 export const GENDER_KEY = "gender";
     export const MALE_KEY = "m";
     export const FEMALE_KEY = "f";
+    export const GENDER_ANY_KEY = "any";
 export const ADDRESS_KEY = "address";
 export const QUALIFICATION_KEY="qua";
 export const YEARS_EXPERIENCE_KEY="yrExp";
@@ -100,7 +101,212 @@ export const TUTOR_TYPE_KEY = "tutorType";
     export const TUTOR_TYPE_NON_EXMOE = "nonexmoe"; // Ex/Retired Non MOE School Teacher
 
 // -------------------- User Wallet -------------------- //
+export const WALLET_ID = "id";
 
+// -------------------- Shared Key -------------------- //
+export const ID_KEY = "id";
+
+export const DAY_OF_WEEK_KEY = "dayOfWeek";
+    export const DAY_OF_WEEK_MON = "mon";
+    export const DAY_OF_WEEK_TUE = "tue";
+    export const DAY_OF_WEEK_WED = "wed";
+    export const DAY_OF_WEEK_THU = "thu";
+    export const DAY_OF_WEEK_FRI = "fri";
+    export const DAY_OF_WEEK_SAT = "sat";
+    export const DAY_OF_WEEK_SUN = "sun";
+
+export const TIME_SLOT_KEY = "timeSlot";
+    export const TIME_SLOT_8AM = "t8am";
+    export const TIME_SLOT_12PM = "t12pm";
+    export const TIME_SLOT_3PM = "t3am";
+    export const TIME_SLOT_6PM = "t6pm";
+
+// -------------------- Request Key -------------------- //
+// /request/v1/admin
+export const REQ_ADMIN_ID = 'id';
+export const REQ_ADMIN_NAME = 'name';
+export const REQ_ADMIN_PHONE = 'phone';
+export const REQ_ADMIN_EMAIL = 'email';
+export const REQ_ADMIN_PERSON = 'person';
+    export const REQ_ADMIN_PERSON_PARENT = 'parent';
+    export const REQ_ADMIN_PERSON_STUDENT = 'student';
+export const REQ_ADMIN_STU_GENDER = 'stuGender';
+export const REQ_ADMIN_SCHOOL = 'school';
+export const REQ_ADMIN_SUBJECT = 'subject';
+// export const REQ_ADMIN_MODE = 'mode';
+export const REQ_ADMIN_PLACE = 'place';
+export const REQ_ADMIN_BUDGET = 'budget';
+export const REQ_ADMIN_DURATION = 'duration';
+export const REQ_ADMIN_LESS_PER_WEEK = 'lessPerWeek';
+export const REQ_ADMIN_DAY_OF_WEEK = 'dayOfWeek';
+export const REQ_ADMIN_TIME = 'timeSlot';
+export const REQ_ADMIN_TUTOR_GENDER = 'tutorGender';
+export const REQ_ADMIN_MESSAGE = 'message';
+export const REQ_ADMIN_SURVEY_01 = 'sur01';
+// surWebSearch surFb surInsta surRecommended surAds surAdsGoogle surAdsFb surTwitter surLinkedIn surWhatsapp surTelegram
+export const REQ_ADMIN_URL = 'url';
+
+export const REQ_ADMIN_JOB_ID = 'jobId';
+export const REQ_ADMIN_JOB_PUBLIC_ID = 'jobPublicId';
+export const REQ_ADMIN_JOB_REF_NO = 'jobRef';
+export const REQ_ADMIN_JOB_STATUS = 'jobStatus';
+
+export const REQ_ADMIN_ONLINE = 'online';
+export const REQ_ADMIN_SUB_ARR = 'subArr';
+export const REQ_ADMIN_AREA = 'area';
+export const REQ_ADMIN_STATE = 'state';
+export const REQ_ADMIN_REMARK = 'remark';
+export const REQ_ADMIN_REQ_STATUS = 'reqStatus';
+    export const REQ_ADMIN_REQ_STATUS_NEW= 'new';
+    export const REQ_ADMIN_REQ_STATUS_NO_RESPONSE= 'noRes';
+    export const REQ_ADMIN_REQ_STATUS_TOO_EXPENSIVE= 'expensive';
+    export const REQ_ADMIN_REQ_STATUS_OTHER_OFFER= 'otherOffer';
+    export const REQ_ADMIN_REQ_STATUS_JOB_IN_PROGRESS ='progress';
+    export const REQ_ADMIN_REQ_STATUS_JOB_SENT ='sent';
+    export const REQ_ADMIN_REQ_STATUS_JOB_NO_RESPONSE ='jobNoRes';
+    export const REQ_ADMIN_REQ_STATUS_JOB_REJECT ='rejectAllTutors';
+    export const REQ_ADMIN_REQ_STATUS_JOB_STOP_AFTER_TRIAL ='stopAfterTrial';
+    export const REQ_ADMIN_REQ_STATUS_JOB_NO_TUTOR ='noTutor';
+    export const REQ_ADMIN_REQ_STATUS_JOB_TIME ='timeXMatch';
+    export const REQ_ADMIN_REQ_STATUS_SUCCESS= 'success';
+export const REQ_ADMIN_DATE_SEND = 'dateSend';
+export const REQ_ADMIN_DATE_READ = 'dateRead';
+export const REQ_ADMIN_OWNER = 'owner';
+export const REQ_ADMIN_STATUS = 'status';
+
+export const REQ_ADMIN_EV_ID = "evId";
+export const REQ_ADMIN_EV_ERROR_CODE = "evErrorCode";
+export const REQ_ADMIN_EV_DATEX = "evDateX";
+export const REQ_ADMIN_EV_ACT = "evAct";
+export const REQ_ADMIN_EV_ACT_STATUS = "evActStatus";
+export const REQ_ADMIN_REFID = "refId"; // RefId is needed to close any request
+
+export const REQ_ADMIN_UTM_SOURCE = "utm_source";
+export const REQ_ADMIN_UTM_MEDIUM = "utm_medium";
+export const REQ_ADMIN_UTM_CAMPAIGN = "utm_campaign";
+export const REQ_ADMIN_UTM_TERM = "utm_term";
+export const REQ_ADMIN_UTM_CONTENT = "utm_content";
+
+// -------------------- Job Full Key -------------------- //
+// job/v1/job
+// job/v1/public (This is the copy display to public protect the client & applicant info. Indicated by [JOB/PUBLIC])
+
+export const JOB_ID = "id";
+export const JOB_PUBLIC_ID = "jobPublicId";
+export const JOB_REQ_ID = "reqId";
+export const JOB_REF_NO = "jobRef"; // [JOB/PUBLIC]
+
+export const JOB_NAME = "name";
+export const JOB_CLIENT_ID = "clientId";
+export const JOB_EMAIL = "email";
+export const JOB_PHONE = "phone";
+export const JOB_DURATION = 'duration'; // [JOB/PUBLIC]
+export const JOB_LESS_PER_WEEK = 'lessPerWeek'; // [JOB/PUBLIC]
+export const JOB_DAY_OF_WEEK = 'dayOfWeek'; // [JOB/PUBLIC]
+export const JOB_TIME = 'timeSlot'; // [JOB/PUBLIC]
+export const JOB_DETAIL = 'detail'; // [JOB/PUBLIC]
+export const JOB_ONLINE = 'online'; // [JOB/PUBLIC]
+export const JOB_PLACE = "place"; // [JOB/PUBLIC]
+export const JOB_SUB_ARR = 'subArr'; // [JOB/PUBLIC]
+export const JOB_AREA = 'area'; // [JOB/PUBLIC]
+export const JOB_STATE = 'state'; // [JOB/PUBLIC]
+
+export const JOB_COMMISSION_POLICY = "comPol"; // [JOB/PUBLIC]
+    export const JOB_COMMISSION_POLICY_50PC = "50pc";
+    export const JOB_COMMISSION_POLICY_40PC = "40pc";
+    export const JOB_COMMISSION_POLICY_30PC = "30pc";
+    export const JOB_COMMISSION_POLICY_25PC = "25pc";
+    export const JOB_COMMISSION_POLICY_20PC = "20pc";
+    export const JOB_COMMISSION_POLICY_10PC = "10pc";
+    export const JOB_COMMISSION_POLICY_NOCOM = "noCom";
+    export const JOB_COMMISSION_POLICY_PLAN25 = "plan25";
+    export const JOB_COMMISSION_POLICY_PLAN20 = "plan20";
+    export const JOB_COMMISSION_POLICY_PROGRESSIVE_INCREMENT_PLAN = "proIncPlan";
+
+export const JOB_FEE = "fee"; // [JOB/PUBLIC]
+export const JOB_FEE_TYPE = "feeType"; // [JOB/PUBLIC]
+export const JOB_PARTNER = "partner"; // [JOB/PUBLIC]
+export const JOB_PARTNER_NAME = "partnerName"; // [JOB/PUBLIC]
+
+export const JOB_JOB_STATUS = "jobStatus"; // [JOB/PUBLIC]
+// Equalvalent to 'progress', 'jobNoRes', 'rejectAllTutors', 'stopAfterTrial', 'noTutor', 'timeXMatch', 'success';
+export const JOB_DATE_CREATE = "dateCreated"; // [JOB/PUBLIC]
+export const JOB_DATE_CLOSE = "dateClosed"; // [JOB/PUBLIC]
+export const JOB_DATE_QUERY = "dateQuery"; // [JOB/PUBLIC]
+export const JOB_OWNER = 'owner';
+export const JOB_STATUS = 'status'; // [JOB/PUBLIC]
+export const JOB_REFID = "refId";
+
+export const JOB_APPLY_ID_ARR = "applyIdArr";
+export const JOB_APPLICANT_ARR = "applicantArr";
+// Arr apllications Obj.
+// {
+//   id: Application Id
+//   name: Applicant name
+//   tid: Applicant Id
+//   status: Application status
+// }
+
+// job/v1/public
+// export const JOB_PUBLIC_ID = "id";
+export const JOB_PUBLIC_JOB_ID= "jobId";
+export const JOB_PUBLIC_APPLICANT_NUM= "applicantNum";
+
+
+// -------------------- Job Application Key -------------------- //
+// job/v1/apply
+export const JOB_APPLY_ID = "id";
+export const JOB_APPLY_JOB_ID = "jobId";
+export const JOB_APPLY_JOB_PUBLIC = "jobPublicId";
+export const JOB_APPLY_DATE_CREATE = "dateCreate";
+export const JOB_APPLY_STATUS = "status";
+  export const JOB_APPLY_STATUS_NEW = "new";
+  export const JOB_APPLY_STATUS_SHORTLIST_TOP = "shortlistTop";
+  export const JOB_APPLY_STATUS_SHORTLIST = "shortlist";
+  export const JOB_APPLY_STATUS_SELECTED = "selected";
+  export const JOB_APPLY_STATUS_MATCHED = "matched";
+export const JOB_APPLY_NAME = "clientId";
+export const JOB_APPLY_TID = "name"; // Tutor Name
+export const JOB_APPLY_SUB_ARR = "subArr"; // Subject to be taught
+export const JOB_APPLY_FEE = "fee"; // Tutor proposed Fee
+export const JOB_APPLY_FEE_TYPE = "feeType";
+export const JOB_APPLY_CURRENCY = "currency";
+export const JOB_APPLY_MESSAGE = "message";
+export const JOB_APPLY_PAYMENT_METHOD = "payMethod";
+  export const JOB_APPLY_PAYMENT_CREDIT = "date";
+  export const JOB_APPLY_PAYMENT_DEPOSIT = "owner";
+  export const JOB_APPLY_PAYMENT_PAY_LATER = "payLater";
+export const JOB_APPLY_LOG = "log";
+  export const JOB_APPLY_LOG_DATE = "date";
+  export const JOB_APPLY_LOG_OWNER = "owner";
+  export const JOB_APPLY_LOG_DESC = "desc";
+
+// -------------------- Event Key -------------------- //
+// Events (admin/v1/ev_noti)
+
+export const EV_ID = "id";
+export const EV_EVENT = "event";
+export const EV_OWNER = "owner";
+export const EV_DESC = "desc";
+export const EV_STATUS = "status";
+export const EV_ERRORCODE = "errorCode";
+export const EV_DATA = "data";
+export const EV_DATE_CREATE = "dateCreate";
+
+export const EV_SENDER = "s";
+export const EV_RECEIVER = "r";
+export const EV_DATE_UPDATE = "dateU";
+export const EV_REFID = "refId";
+export const EV_SEEN = "seen";
+
+export const EV_ACT = "act";
+export const EV_ACT_TARGET = "actTarget";
+export const EV_ACT_DATE = "actDate";
+export const EV_ACT_DESC = "actDesc";
+export const EV_ACT_STATUS = "actStatus";
+    export const EV_ACT_STATUS_NEW = "new";
+    export const EV_ACT_STATUS_DONE = "done";
+export const EV_ACT_DATE_UPDATE = "actDateU";
 
 
 // Subject specific details ()
@@ -910,96 +1116,6 @@ export const REQUEST_DATE_SENT = 'dateSend';
 export const REQUEST_DATE_READ = 'dateRead';
 export const REQUEST_DATE_READ_ADMIN = 'dateReadAdmin';
 export const REQUEST_STATUS = 'status';
-
-// Request (/request/v1/admin)
-export const REQ_ADMIN_ID = 'id';
-export const REQ_ADMIN_NAME = 'name';
-export const REQ_ADMIN_PHONE = 'phone';
-export const REQ_ADMIN_EMAIL = 'email';
-export const REQ_ADMIN_PERSON = 'person';
-    export const REQ_ADMIN_PERSON_PARENT = 'parent';
-    export const REQ_ADMIN_PERSON_STUDENT = 'student';
-export const REQ_ADMIN_STU_GENDER = 'stuGender';
-export const REQ_ADMIN_SCHOOL = 'school';
-export const REQ_ADMIN_SUBJECT = 'subject';
-export const REQ_ADMIN_MODE = 'mode';
-export const REQ_ADMIN_PLACE = 'place';
-export const REQ_ADMIN_BUDGET = 'budget';
-export const REQ_ADMIN_DURATION = 'duration';
-export const REQ_ADMIN_LESS_PER_WEEK = 'lessPerWeek';
-export const REQ_ADMIN_DAY_OF_WEEK = 'dayOfWeek';
-export const REQ_ADMIN_TIME = 'timeSlot';
-export const REQ_ADMIN_TUTOR_GENDER = 'tutorGender';
-export const REQ_ADMIN_MESSAGE = 'message';
-export const REQ_ADMIN_SURVEY_01 = 'sur01';
-// surWebSearch surFb surInsta surRecommended surAds surAdsGoogle surAdsFb surTwitter surLinkedIn surWhatsapp surTelegram
-export const REQ_ADMIN_URL = 'url';
-
-export const REQ_ADMIN_JOB_ID = 'jobId';
-export const REQ_ADMIN_JOB_REF_NO = 'jobRef';
-export const REQ_ADMIN_JOB_STATUS = 'jobStatus';
-
-export const REQ_ADMIN_REMARK = 'remark';
-export const REQ_ADMIN_ONLINE = 'online';
-export const REQ_ADMIN_CAT_ARR = 'catArr';
-export const REQ_ADMIN_SUB_ARR = 'subArr';
-export const REQ_ADMIN_AREA = 'area';
-export const REQ_ADMIN_STATE = 'state';
-export const REQ_ADMIN_REQ_STATUS = 'reqStatus';
-    export const REQ_ADMIN_REQ_STATUS_NEW= 'new';
-    export const REQ_ADMIN_REQ_STATUS_NO_RESPONSE= 'noRes';
-    export const REQ_ADMIN_REQ_STATUS_TOO_EXPENSIVE= 'expensive';
-    export const REQ_ADMIN_REQ_STATUS_OTHER_OFFER= 'otherOffer';
-    export const REQ_ADMIN_REQ_STATUS_JOB_IN_PROGRESS ='progress';
-    export const REQ_ADMIN_REQ_STATUS_JOB_SENT ='sent';
-    export const REQ_ADMIN_REQ_STATUS_JOB_NO_RESPONSE ='jobNoRes';
-    export const REQ_ADMIN_REQ_STATUS_JOB_REJECT ='rejectAllTutors';
-    export const REQ_ADMIN_REQ_STATUS_JOB_STOP_AFTER_TRIAL ='stopAfterTrial';
-    export const REQ_ADMIN_REQ_STATUS_JOB_NO_TUTOR ='noTutor';
-    export const REQ_ADMIN_REQ_STATUS_JOB_TIME ='timeXMatch';
-    export const REQ_ADMIN_REQ_STATUS_SUCCESS= 'success';
-export const REQ_ADMIN_DATE_SEND = 'dateSend';
-export const REQ_ADMIN_DATE_READ = 'dateRead';
-export const REQ_ADMIN_OWNER = 'owner';
-export const REQ_ADMIN_STATUS = 'status';
-
-// Jobs/v1/job
-export const JOB_ID = "id";
-export const JOB_REQ_ID = "reqId";
-export const JOB_REF_NO = "jobRef";
-export const JOB_NAME = "name"
-export const JOB_CLIENT_ID = "clientId"
-export const JOB_EMAIL = "email"
-export const JOB_PHONE = "phone"
-export const JOB_PLACE = "place"
-export const JOB_MODE = "mode"
-export const JOB_DURATION = 'duration';
-export const JOB_LESS_PER_WEEK = 'lessPerWeek';
-export const JOB_DAY_OF_WEEK = 'dayOfWeek';
-export const JOB_TIME = 'timeSlot';
-export const JOB_ONLINE = 'online';
-export const JOB_CAT_ARR = 'catArr';
-export const JOB_SUB_ARR = 'subArr';
-export const JOB_AREA = 'area';
-export const JOB_STATE = 'state';
-
-export const JOB_DETAIL = 'jobDetail';
-export const JOB_COMMISSION_POLICY = "comPol";
-export const JOB_FEE = "fees";
-export const JOB_FEE_TYPE = "feeType";
-
-export const JOB_APPLICANT_ID_ARR = "applicantIdArr";
-export const JOB_APPLICANT_NAME_ARR = "applicantNameArr";
-export const JOB_TUTOR_ID_ARR = "tutorIdArr";
-export const JOB_TUTOR_NAME_ARR = "tutorNameArr";
-export const JOB_MATCHED_TUTOR_ID = "matchedIdArr";
-export const JOB_MATCHED_TUTOR_NAME = "matchedNameArr";
-export const JOB_JOB_STATUS = "jobStatus";
-// Equalvalent to 'progress', 'jobNoRes', 'rejectAllTutors', 'stopAfterTrial', 'noTutor', 'timeXMatch', 'success';
-export const JOB_DATE_CREATE = "dateCreated";
-export const JOB_DATE_CLOSE = "dateClosed";
-export const JOB_OWNER = 'owner';
-export const JOB_STATUS = 'status';
 
 // org/v1/user
 export const ORG_USER_UID = "uid"; // Org User Id. Similar to document Id

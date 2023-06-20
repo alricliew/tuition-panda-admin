@@ -5,6 +5,8 @@ import { CContainer, CSpinner } from '@coreui/react'
 // routes config
 import routes from '../routes'
 
+import RequestEdit from '../views/request/RequestEdit';
+
 const AppContent = () => {
   return (
     <CContainer lg>
@@ -24,6 +26,9 @@ const AppContent = () => {
             )
           })}
           <Route path="/" element={<Navigate to="dashboard" replace />} />
+
+          <Route path='/request/:reqId/' element={<RequestEdit/>}/>
+
         </Routes>
       </Suspense>
     </CContainer>
